@@ -1,0 +1,2 @@
+rootProject.name='LV2_FamousPeopleApp'
+include ':app'

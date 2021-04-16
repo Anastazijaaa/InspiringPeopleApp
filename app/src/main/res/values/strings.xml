@@ -1,0 +1,14 @@
+<resources>
+    <string name="born_die">Born on 01/01/1901, died on 01/01/2001</string>
+    <string name="app_name">LV2_FamousPeopleApp</string>
+    <string name="input">New people input</string>
+    <string name="main_text">Add new person!</string>
+    <string name="image">Input URL of the new image.</string>
+    <string name="input_new_name">What is the name of this person?"</string>
+    <string name="birth">When was this famous person born?</string>
+    <string name="death">When did this famous person die?</string>
+    <string name="short_description">Tell something about this person.</string>
+    <string name="some_quotes">This person said...</string>
+    <string name="saveBtn">Save</string>
+    <string name="inputBtn">See more famous people here!</string>
+</resources>

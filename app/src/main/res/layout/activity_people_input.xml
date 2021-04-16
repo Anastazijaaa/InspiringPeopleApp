@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activityNewInput"
+    >
+
+<TextView
+    android:id="@+id/inputText"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="28dp"
+    android:layout_marginTop="19dp"
+    android:text="@string/main_text"
+    android:textColor="@color/cerise"
+    android:textSize="20sp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toTopOf="@+id/newName"/>
+
+<EditText
+    android:id="@+id/image"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="28dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginEnd="28dp"
+    android:hint="@string/image"
+    android:textColorHint="@color/blue"
+    android:inputType="text"
+    android:textSize="15dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/newName"
+    />
+
+    <EditText
+    android:id="@+id/newName"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="19dp"
+    android:layout_marginStart="28dp"
+    android:layout_marginEnd="28dp"
+    android:textSize="15dp"
+    android:hint="@string/input_new_name"
+    android:inputType="textPersonName"
+    android:textColorHint="@color/blue"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/inputText"/>
+
+    <EditText
+    android:id="@+id/input_date_of_birth"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="3dp"
+    android:layout_marginStart="28dp"
+    android:layout_marginEnd="28dp"
+    android:inputType="datetime"
+    android:hint="@string/birth"
+    android:textColorHint="@color/blue"
+    android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/image" />
+
+<EditText
+    android:id="@+id/input_date_of_death"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="28dp"
+    android:layout_marginTop="3dp"
+    android:layout_marginEnd="28dp"
+    android:hint="@string/death"
+    android:inputType="datetime"
+    android:textColorHint="@color/blue"
+    android:textSize="15dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/input_date_of_birth"
+    app:layout_constraintEnd_toEndOf="parent"/>
+
+<EditText
+    android:id="@+id/short_desc"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="28dp"
+    android:layout_marginTop="3dp"
+    android:layout_marginEnd="28dp"
+    android:hint="@string/short_description"
+    android:textSize="15dp"
+    android:textColorHint="@color/blue"
+    android:inputType="textLongMessage"
+    app:layout_constraintTop_toBottomOf="@+id/input_date_of_death"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"/>
+
+<EditText
+    android:id="@+id/first_quote"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="28dp"
+    android:layout_marginTop="3dp"
+    android:layout_marginEnd="28dp"
+    android:inputType="textLongMessage"
+    android:hint="@string/some_quotes"
+    android:textColorHint="@color/blue"
+    android:textSize="15dp"
+    app:layout_constraintTop_toBottomOf="@+id/short_desc"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"/>
+
+<EditText
+    android:id="@+id/second_quote"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="28dp"
+    android:layout_marginTop="3dp"
+    android:layout_marginEnd="28dp"
+    android:inputType="textLongMessage"
+    android:hint="@string/some_quotes"
+    android:textColorHint="@color/blue"
+    android:textSize="15dp"
+    app:layout_constraintTop_toBottomOf="@+id/first_quote"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"/>
+
+<EditText
+    android:id="@+id/third_quote"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="28dp"
+    android:layout_marginTop="3dp"
+    android:layout_marginEnd="28dp"
+    android:inputType="textLongMessage"
+    android:hint="@string/some_quotes"
+    android:textColorHint="@color/blue"
+    android:textSize="15dp"
+    app:layout_constraintTop_toBottomOf="@+id/second_quote"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"/>
+
+    <Button
+        android:id="@+id/list_of_people"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:background="@color/blue"
+        android:text="@string/inputBtn"
+        android:textColor="@color/cerise"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/third_quote" />
+
+    <Button
+        android:id="@+id/BtnInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:background="@color/blue"
+        android:text="@string/saveBtn"
+        android:textColor="@color/cerise"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.945"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/third_quote" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
